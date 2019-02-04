@@ -1,0 +1,109 @@
+/*-----------------------Pjesmarresit-----------------------*/
+/*-----------------------DanjelQose-----------------------*/
+.DanjelQose{
+  /*left: /* IDEA: Move the whole class from the left */
+}
+.socialmediainsta{
+  font-size: 20px;
+  bottom: 150px;
+  right: 1300px;
+  position: relative;
+}
+.socialmediasnap{
+  font-size: 20px;
+  bottom: 140px;
+  right: 1300px;
+  position: relative;
+  opacity: 0.9;
+}
+.socialmediaskype{
+  font-size: 20px;
+  bottom: 130px;
+  right: 1300px;
+  position: relative;
+}
+.socialmediafacebook{
+  font-size: 20px;
+  bottom: 120px;
+  right: 1300px;
+  position: relative;
+}
+.foto img:nth-of-type(1){
+  top: 250px;
+  left: 100px;
+  border-style: double;
+  border-width: 4px 4px 4px 4px;
+  border-color: black;
+  border-radius: 0.5%;
+  position: relative;
+}
+
+
+.fa {
+  padding: 20px;
+  width:60px;
+  height: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+
+}
+.fa:hover{
+  opacity: 0.8;
+  -webkit-transform: translateX(-30px) scale(1.5);
+  -moz-transform: translateX(-30px) scale(1.5);
+  -o-transform: translateX(-30px) scale(1.5);
+  transform:translateX(-30px) scale(1.5);
+}
+
+.fa-instagram{
+  background: #000;
+  color: white;
+}
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.name{
+  font-color: black;
+  font-family: algerian;
+  font-size: 50px;
+  top: 510px;
+  left: 550px;
+  position: relative;
+}
+
+hr{
+  display: block;
+  color: black;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  width: 50%;
+}
+
+.text{
+  position: relative;
+  font-size: 20px;
+  font-family: serif;
+  top: 0px;
+
+}
+
+/*-----------------------MarioAlla-----------------------*/

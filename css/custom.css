@@ -1,0 +1,2223 @@
+@media screen and (max-width: 787px) {
+    .A {
+        display: none !important;  /* If you just want it hidden */
+        pointer-events: none; /* If you don't want the user to be able to click */
+    }
+}
+
+.P{
+  max-height: 100px;
+  position: static;
+}
+
+@media screen and (max-height:360px){
+
+  .P{
+    display: none !important;
+    pointer-events: none;
+  }
+}
+
+@media only screen and (max-width:38.6cm){
+
+.P{
+  zoom:0.95;
+}
+}
+@media only screen and (min-width:50.6cm){
+  .P{
+    zoom:1.45;
+}
+}
+
+@media only screen and (max-width:38.6cm){
+  .A{
+    zoom:0.95;
+}
+}
+@media only screen and (min-width:50.6cm){
+  .A{
+    zoom:1.45;
+}
+}
+@media only screen and (max-width:38.6cm){
+  .H{
+    zoom:0.95;
+}
+}
+@media only screen and (min-width:50.6cm){
+  .H{
+    zoom:1.45;
+}
+}
+
+.shadow {
+	width: 100%;
+	height: 168px;
+	position: relative;
+	margin-top: -110px;
+	background: transparent url(../images/shadow.png) no-repeat bottom center;
+	background-size: 100% 100%; /* stretches it */
+	z-index: -1;
+	display: none;
+	left: 70%;
+}
+
+.nav-arrows {
+	display: none;
+}
+
+.nav-arrows a {
+	width: 42px;
+	height: 42px;
+	background: #154360  url(../images/nav.png) no-repeat top left;
+	position: absolute;
+	top: 90%;
+	left: 70%;
+	text-indent: -9000px;
+	cursor: pointer;
+	margin-top: -21px;
+	opacity: 0.9;
+	border-radius: 5%;
+
+}
+
+.nav-arrows a:first-child{
+	left: 163.5%;
+	background-position: top right;
+}
+
+.nav-arrows a:hover {
+	opacity: 1;
+}
+
+.nav-dots {
+	text-align: center;
+	position: absolute;
+	bottom: -5px;
+	height: 30px;
+	width: 100%;
+	left: 0;
+	display: none;
+}
+
+.nav-dots span {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	margin: 3px;
+	background: #cbbfae;
+	cursor: pointer;
+	box-shadow:
+		0 1px 1px rgba(255,255,255,0.6),
+		inset 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.nav-dots span.nav-dot-current {
+	box-shadow:
+		0 1px 1px rgba(255,255,255,0.6),
+		inset 0 1px 1px rgba(0,0,0,0.1),
+		inset 0 0 0 3px #cbbfae,
+		inset 0 0 0 8px #fff;
+}
+
+.nav-options {
+	width: 70px;
+	height: 30px;
+	position: absolute;
+	right: 70px;
+	bottom: 0px;
+	display: none;
+}
+
+.nav-options span {
+	width: 30px;
+	height: 30px;
+	background: #cbbfae url(../images/options.png) no-repeat top left;
+	text-indent: -9000px;
+	cursor: pointer;
+	opacity: 0.7;
+	display: inline-block;
+	border-radius: 50%;
+}
+
+.nav-options span:first-child{
+	background-position: -30px 0px;
+	margin-right: 3px;
+}
+
+.nav-options span:hover {
+	opacity: 1;
+}
+
+
+
+
+/*--------------------------------------------------------------------------------*/
+header {
+      width: 100%;
+      height: 50vh;
+      position: absolute;
+      background-attachment: fixed;
+      margin: auto;
+      z-index: 9999;
+
+
+}
+.content {
+      width: 94%;
+      margin: 4em auto;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: justify;
+
+}
+
+.logo {
+      line-height: 60px;
+      position: absolute;
+      float: left;
+      margin: 16px 46px;
+      color: #fff;
+      font-weight:50% bold;
+      font-size: 30px;
+      letter-spacing: 2px;
+			font-style: italic;
+			font-family: algerian;
+
+}
+
+nav {
+      position: fixed;
+      width: 100%;
+      line-height: 60px;
+
+
+}
+
+nav ul {
+      line-height: 60px;
+      list-style: none;
+      background: rgba(0, 0, 0, 0);
+      overflow: hidden;
+      color: #fff;
+      padding: 0;
+      text-align: right;
+      margin: 0;
+      padding-right: 40px;
+      transition: 1s;
+
+
+}
+
+nav.black ul {
+      background: #000;
+
+}
+
+nav ul li {
+      display: inline-block;
+      padding: 16px 40px;
+
+}
+
+nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+
+}
+
+.menu-icon {
+      line-height: 60px;
+      width: 100%;
+      background: #000;
+      text-align: right;
+      box-sizing: border-box;
+      padding: 15px 24px;
+      cursor: pointer;
+      color: #fff;
+      display: none;
+}
+
+.menu ul li a{
+  color:#eee8cd;
+  font-family: algerian;
+  font-size: 20px;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.menu ul li a:hover{
+  opacity: 0.9;
+  color: #fff;
+  font-size: 25px;
+}
+
+/*@media(max-width: 786px) {
+
+
+
+      .logo {
+            position: absolute;
+            top: 0;
+            margin-top: 2px;
+      }
+
+      nav ul {
+            max-height: 0px;
+            background: #000;
+      }
+
+      nav.black ul {
+            background: #000;
+      }
+
+      .showing {
+            max-height: 34em;
+      }
+
+      nav ul li {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 10px 20px;
+            text-align: center;
+      }
+
+      .menu-icon {
+            display: block;
+            line-height: 20px;
+     		padding: 12px 8px;
+      }
+
+      nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 14px;
+}
+
+	nav {
+
+      line-height: 30px;
+
+
+}
+}
+/*-----------------------Images-----------------------*/
+/*-----------------------Holokausti-----------------------*/
+.picture img {
+    position:absolute;
+    width: 24cm;
+    height: 16cm;
+    z-index: 4;
+}
+
+.fotoh img:nth-of-type(1){
+  top: 250px;
+  left: 100px;
+  border-style: double;
+  border-width: 4px 4px 4px 4px;
+  border-color: black;
+  border-radius: 0.5%;
+  position: relative;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.fotoh img:nth-of-type(1):hover{
+  width:780px;
+  height: 550px;
+  -webkit-transform: translateX(100px) scale(1);
+  -moz-transform: translateX(100px) scale(1);
+  -o-transform: translateX(100px) scale(1);
+  transform:translateX(100px) scale(1);
+
+}
+
+.picture img:nth-of-type(1) {
+    left: 8cm;
+    top: 6cm;
+    border:solid 2px ;
+    border-color: black;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+
+    }
+
+    .picture img:nth-of-type(1):hover{
+      -webkit-transform: translateX(-100px) scale(1);
+      -moz-transform: translateX(-100px) scale(1);
+      -o-transform: translateX(-100px) scale(1);
+      transform:translateX(-100px) scale(1);
+
+      width:400px;
+      height:500px;
+      left:5cm;
+    }
+
+    #l.picture1 img:nth-of-type(1) {
+        left: 8cm;
+        top: 12cm;
+        border:solid 2px ;
+        border-color: black;
+        -webkit-transition: all 0.5s ease-out;
+        -moz-transition: all 0.5s ease-out;
+        -o-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
+
+        }
+
+        #l.picture1 img:nth-of-type(1):hover{
+          -webkit-transform: translateX(-100px) scale(1);
+          -moz-transform: translateX(-100px) scale(1);
+          -o-transform: translateX(-100px) scale(1);
+          transform:translateX(-100px) scale(1);
+
+          width:400px;
+          height:500px;
+          left:5cm;
+        }
+
+  .nameqose10{
+  font-color: black;
+  font-family: algerian;
+  font-size: 30px;
+  top: 300px;
+  left: 550px;
+  position: relative;
+}
+
+.nameqose10{
+font-color: black;
+font-family: algerian;
+font-size: 30px;
+top: 300px;
+left: 550px;
+position: relative;
+}
+.nameqose11{
+font-color: black;
+font-family: algerian;
+font-size: 30px;
+}
+
+p1{
+  font-family: algerian;
+  font-size: 30px;
+}
+
+#Nana.DanjelQose{
+  position: relative;
+  top: 700px;
+}
+
+#Nana1.DanjelQose{
+  position: relative;
+  top: 1200px;
+}
+
+#Nana3.DanjelQose{
+  position: relative;
+  top: 1700px;
+}
+
+#Nana4.DanjelQose{
+  position: relative;
+  top: 2200px;
+}
+
+#Nana5.DanjelQose{
+  position: relative;
+  top: 2700px;
+}
+
+
+hr2{
+  display: block;
+  color: black;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  width: 40%;
+}
+
+.text10{
+  position: relative;
+  font-size: 20px;
+  font-family: serif;
+  top: 0px;
+  opacity: 1;
+}
+
+.text10{
+  position: relative;
+  font-size: 20px;
+  font-family: serif;
+  top: 0px;
+  opacity: 1;
+}
+
+
+
+
+
+/*-----------------------Photos-----------------------*/
+
+.photos img {
+    position:absolute;
+    width: 250px;
+    height: 250px;
+}
+
+
+
+
+.photos img:nth-of-type(1) {
+    left: 50px;
+    top: 50px;
+}
+
+.photos img:nth-of-type(2) {
+    left: 150px;
+    top: 100px;
+}
+
+.photos img:nth-of-type(3) {
+    left: 450px;
+    top: 200px;
+}
+
+.photos img:nth-of-type(4) {
+    left: 350px;
+    top: 150px;
+}
+
+.photos img:nth-of-type(5) {
+    left: 450px;
+    top: 50px;
+}
+
+.photos img:nth-of-type(6) {
+    left: 450px;
+    top: 200px;
+}
+
+.photos img:nth-of-type(7) {
+    left: 450px;
+    top: 200px;
+}
+
+.photos img:nth-of-type(8) {
+    left: 450px;
+    top: 200px;
+}
+
+.photos img:nth-of-type(9) {
+    left: 450px;
+    top: 200px;
+}
+
+.photos img:nth-of-type(10) {
+    left: 450px;
+    top: 200px;
+}
+
+.photos img:nth-of-type(11) {
+    left: 450px;
+    top: 200px;
+}
+
+.photos img:nth-of-type(12) {
+    left: 450px;
+    top: 200px;
+}
+
+.photos img:nth-of-type(13) {
+    left: 450px;
+    top: 200px;
+}
+
+.photos img:nth-of-type(14) {
+    left: 450px;
+    top: 200px;
+}
+
+.photos img:nth-of-type(15) {
+    left: 450px;
+    top: 200px;
+}
+
+.photos img:nth-of-type(16) {
+    left: 450px;
+    top: 200px;
+}
+
+ .photos img:nth-of-type(1) {
+    left: 200px;
+    top: 1800px;
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+
+.photos img:nth-of-type(2) {
+    left: 550px;
+    top: 1800px;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+
+.photos img:nth-of-type(3) {
+    left: 900px;
+    top: 1800px;
+    -webkit-transform: rotate(7deg);
+    -moz-transform: rotate(7deg);
+    -o-transform: rotate(7deg);
+    transform: rotate(7deg);
+}
+
+.photos img:nth-of-type(4) {
+    left: 200px;
+    top: 200px;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+
+.photos img:nth-of-type(5) {
+    left: 550px;
+    top: 200px;
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    transform: rotate(2deg);
+}
+
+.photos img:nth-of-type(6) {
+    left: 900px;
+    top: 200px;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+
+.photos img:nth-of-type(7) {
+    left: 200px;
+    top: 600px;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+
+.photos img:nth-of-type(8) {
+    left: 550px;
+    top: 600px;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+
+.photos img:nth-of-type(9) {
+    left: 900px;
+    top: 600px;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+
+.photos img:nth-of-type(10) {
+    left: 200px;
+    top: 1000px;
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    transform: rotate(2deg);
+}
+
+.photos img:nth-of-type(11) {
+    left: 550px;
+    top: 1000px;
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+
+.photos img:nth-of-type(12) {
+    left: 900px;
+    top: 1000px;
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    transform: rotate(2deg);
+}
+
+.photos img:nth-of-type(13) {
+    left: 200px;
+    top: 1400px;
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+
+.photos img:nth-of-type(14) {
+    left: 550px;
+    top: 1400px;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+
+.photos img:nth-of-type(15) {
+    left: 900px;
+    top: 1400px;
+    -webkit-transform: rotate(7deg);
+    -moz-transform: rotate(7deg);
+    -o-transform: rotate(7deg);
+    transform: rotate(7deg);
+}
+
+
+.photos img:hover {
+    -webkit-transform: scale(6);
+    -moz-transform: scale(6);
+    -o-transform: scale(6);
+    transform: scale(6);
+    z-index: 10;
+}
+
+.photos img:hover {
+    -webkit-transform: rotate(10deg) scale(2);
+    -moz-transform: rotate(10deg) scale(2);
+    -o-transform: rotate(10deg) scale(1.5);
+    transform: rotate(10deg) scale(2);
+    z-index: 10;
+}
+
+.photos img {
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    padding: 5px 5px 5px 5px;
+    background: #909396;
+    border: solid 0.5px black;
+    opacity: none;
+    z-index:1;
+
+}
+
+
+/*-----------------------Photos @media(max-width:768px)-----------------------*/
+
+/*@media(max-width: 768px){
+
+.photos img {
+    position:absolute;
+    width: 100px;
+    height: 100px;
+}
+
+
+
+ .photos img:nth-of-type(1) {
+    left: 50px;
+    top: 200px;
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+
+.photos img:nth-of-type(2) {
+    left: 50px;
+    top: 300px;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+
+.photos img:nth-of-type(3) {
+    left: 50px;
+    top: 400px;
+    -webkit-transform: rotate(7deg);
+    -moz-transform: rotate(7deg);
+    -o-transform: rotate(7deg);
+    transform: rotate(7deg);
+}
+
+.photos img:nth-of-type(4) {
+    left: 50px;
+    top: 500px;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+
+.photos img:nth-of-type(5) {
+    left: 50px;
+    top: 600px;
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    transform: rotate(2deg);
+}
+
+.photos img:nth-of-type(6) {
+    left: 50px;
+    top: 700px;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+
+.photos img:nth-of-type(7) {
+    left: 50px;
+    top: 800px;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+
+.photos img:nth-of-type(8) {
+    left: 50px;
+    top: 900px;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+
+.photos img:nth-of-type(9) {
+    left: 50px;
+    top: 1000px;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+
+.photos img:nth-of-type(10) {
+    left: 50px;
+    top: 1100px;
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    transform: rotate(2deg);
+}
+
+.photos img:nth-of-type(11) {
+    left: 50px;
+    top: 1200px;
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+
+.photos img:nth-of-type(12) {
+    left: 50px;
+    top: 1300px;
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    transform: rotate(2deg);
+}
+
+.photos img:nth-of-type(13) {
+    left: 50px;
+    top: 1400px;
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+
+.photos img:nth-of-type(14) {
+    left: 50px;
+    top: 1500px;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+
+.photos img:nth-of-type(15) {
+    left: 50px;
+    top: 1600px;
+    -webkit-transform: rotate(7deg);
+    -moz-transform: rotate(7deg);
+    -o-transform: rotate(7deg);
+    transform: rotate(7deg);
+}
+
+}
+
+/*-----------------------Footer-----------------------*/
+.footer {
+  position:relative;
+  padding: 25px;
+  background-color: #626567;
+  text-align: center;
+  z-index: 9999;
+  clear: both;
+  padding-top: 25px;
+	width: 100%;
+	top: 2200px ;
+}
+.footerh {
+  position: absolute;
+  padding: 25px;
+  background-color: #626567;
+  text-align: center;
+  z-index: 9999;
+  clear: both;
+  padding-top: 25px;
+	width: 100%;
+	top: 3200px;
+}
+#hlk.footerh  {
+  position:  absolute;
+  padding: 15px;
+  background-color: #ececec;
+  z-index: 9999;
+  clear: both;
+  padding-top: 15px;
+	width: 100%;
+	top: 100%auto;
+}
+#hlk.footerh p{
+  text-align:left;
+  font-size: 14px;
+  color: #670;
+}
+
+#hlk.footerh p a{
+  color: #670;
+}
+
+#hlk.footerh p a:hover{
+  color: #000;
+}
+
+#hlk.footerh p p9{
+  float:right;
+  font-size: 14px;
+  color: #666;
+}
+
+#hlk.footerh p p9{
+  color: #666;
+}
+
+#hlk.footerh p p9 a:hover{
+  color: #000;
+}
+
+#hlk0.footerh  {
+  position:  absolute;
+  padding: 15px;
+  background-color: #ececec;
+  z-index: 9999;
+  clear: both;
+  padding-top: 15px;
+	width: 100%;
+	top: 4700px;
+}
+#hlk0.footerh p{
+  text-align:left;
+  font-size: 14px;
+  color: #670;
+}
+
+#hlk0.footerh p a{
+  color: #670;
+}
+
+#hlk0.footerh p a:hover{
+  color: #000;
+}
+
+#hlk0.footerh p p9{
+  float:right;
+  font-size: 14px;
+  color: #666;
+}
+
+#hlk0.footerh p p9{
+  color: #666;
+}
+
+#hlk0.footerh p p9 a:hover{
+  color: #000;
+}
+
+#vgh.footerh  {
+  position:  absolute;
+  padding: 15px;
+  background-color: #ececec;
+  z-index: 9999;
+  clear: both;
+  padding-top: 15px;
+  width: 100%;
+  top: 85% auto;
+}
+#vgh.footerh p{
+  text-align:left;
+  font-size: 14px;
+  color: #670;
+}
+
+#vgh.footerh p a{
+  color: #670;
+}
+
+#vgh.footerh p a:hover{
+  color: #000;
+}
+
+#vgh.footerh p p9{
+  float:right;
+  font-size: 14px;
+  color: #666;
+}
+
+#vgh.footerh p p9{
+  color: #666;
+}
+
+#vgh.footerh p p9 a:hover{
+  color: #000;
+}
+
+#fgh.footerh  {
+  position: absolute;
+  padding: 15px;
+  background-color: #ececec;
+  z-index: 9999;
+  clear: both;
+  padding-top: 15px;
+  width: 100%;
+  top: 300%;
+}
+#fgh.footerh p{
+  text-align:left;
+  font-size: 14px;
+  color: #670;
+}
+
+#fgh.footerh p a{
+  color: #670;
+}
+
+#fgh.footerh p a:hover{
+  color: #000;
+}
+
+#fgh.footerh p p9{
+  float:right;
+  font-size: 14px;
+  color: #666;
+}
+
+#fgh.footerh p p9{
+  color: #666;
+}
+
+#fgh.footerh p p9 a:hover{
+  color: #000;
+}
+
+
+p{
+	color: white;
+}
+
+/*@media(max-width: 768px){
+    .footer {
+  position: fixed;
+  left: 0;
+	right: 0;
+	bottom: 0;
+  padding: 10px;
+  background-color: #626567;
+  text-align: center;
+  z-index: 9999;
+}
+
+p{
+	color: white;
+	font-size:15px;
+}
+
+.footervideo {
+position: fixed;
+top:2000px;
+padding: 10px;
+background-color: #626567;
+text-align: center;
+z-index: 9999;
+}
+
+p{
+color: white;
+font-size:15px;
+}
+}
+/*-----------------------Footer-----------------------*/
+
+/*-----------------------Videos-----------------------*/
+.iframe iframe:nth-of-type(1){
+  left: 90px;
+  top:1000px;
+}
+.iframe iframe:nth-of-type(2){
+  left: 145px;
+  top:1000px;
+}
+.iframe iframe:nth-of-type(3){
+  left: 90px;
+  top:1060px;
+}
+.iframe iframe:nth-of-type(4){
+  left: 145px;
+  top:1060px;
+}
+.iframe iframe:nth-of-type(5){
+  left: 90px;
+  top:1120px;
+}
+.iframe iframe:nth-of-type(6){
+  left: 145px;
+  top:1120px;
+}
+.iframe iframe:nth-of-type(7){
+  left: 90px;
+  top: 1180px;
+}
+.iframe iframe:nth-of-type(8){
+  left: 145px;
+  top: 1180px;
+}
+#vivgh.video video:nth-of-type(1){
+    left: 230px ;
+    top: 250px;
+}
+
+.video video:nth-of-type(1){
+	left: 90px;
+	top: 200px;
+}
+.video video:nth-of-type(2){
+	left: 117.5px;
+	top: 200px;
+}
+.video video:nth-of-type(3){
+	left: 145px;
+	top: 200px;
+}
+.video video:nth-of-type(4){
+	left: 90px;
+	top: 400px;
+}
+.video video:nth-of-type(5){
+	left: 117.5px;
+	top: 400px;
+}
+.video video:nth-of-type(6){
+	left: 145px;
+	top: 400px;
+}
+.video video:nth-of-type(7){
+	left: 90px;
+	top: 600px;
+}
+.video video:nth-of-type(8){
+	left: 117.5px;
+	top: 600px;
+}
+.video video:nth-of-type(9){
+	left: 145px;
+	top: 600px;
+}
+.video video:nth-of-type(10){
+	left: 90px;
+	top: 800px;
+}
+.video video:nth-of-type(11){
+	left: 117.5px;
+	top: 800px;
+}
+.video video:nth-of-type(12){
+	left: 145px;
+	top: 800px;
+}
+
+.video video{
+	position: relative;
+}
+.iframe iframe{
+  position: relative;
+}
+.footervideo {
+  position:relative;
+  padding: 25px;
+  background-color: #626567;
+  text-align: center;
+  z-index: 9999;
+  clear: both;
+  padding-top: 25px;
+	width: 100%;
+	top: 1000px;
+}
+/*-----------------------Videos @media(max-width: 786px)-----------------------*/
+
+/*@media(max-width: 786px){
+
+
+.video video:nth-of-type(1){
+
+
+	top: 200px;
+	left:5px;
+}
+
+.video video:nth-of-type(2){
+
+
+	top: 300px;
+	left:5px;
+}
+
+.video video:nth-of-type(3){
+
+
+	top: 400px;
+	left:5px;
+}
+
+.video video:nth-of-type(4){
+
+
+	top: 500px;
+	left:5px;
+}
+
+.video video:nth-of-type(5){
+	top:600px;
+	left:5px;
+}
+
+.video video:nth-of-type(6){
+
+	top:700px;
+	left:5px;
+}
+
+.video video:nth-of-type(7){
+
+	top:800px;
+	left:5px;
+}
+
+.video video:nth-of-type(8){
+	top:900px;
+	left:5px;
+}
+
+.video video:nth-of-type(9){
+	top:1000px;
+	left:5px;
+}
+
+.video video:nth-of-type(10){
+	top:1100px;
+	left:5px;
+}
+.video video:nth-of-type(11){
+	top:1200px;
+	left:5px;
+}
+.video video:nth-of-type(12){
+	top:1300px;
+	left:5px;
+}
+
+
+.video video{
+	position: fixed;
+	height:200px;
+	width:300px;
+}
+}
+*/
+.fa {
+  padding: 20px;
+  width:60px;
+  height: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+
+}
+.fa:hover{
+  opacity: 0.8;
+  -webkit-transform: translateX(-30px) scale(1.5);
+  -moz-transform: translateX(-30px) scale(1.5);
+  -o-transform: translateX(-30px) scale(1.5);
+  transform:translateX(-30px) scale(1.5);
+}
+
+#left .fa {
+  padding: 20px;
+  width:60px;
+  height: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+
+}
+#left .fa:hover{
+  opacity: 0.8;
+  -webkit-transform: translateX(30px) scale(1.5);
+  -moz-transform: translateX(30px) scale(1.5);
+  -o-transform: translateX(30px) scale(1.5);
+  transform:translateX(30px) scale(1.5);
+}
+
+.fa-instagram{
+  background: #000;
+  color: white;
+}
+.fa-snapchat-ghost {
+  background: #000;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.fa-skype {
+  background: #000;
+  color: white;
+}
+.fa-facebook {
+  background: #000;
+  color: white;
+}
+.fa-linkedin {
+  background: #000;
+  color: white;
+}
+.fa-twitter {
+  background: #000;
+  color: white;
+}
+/*-----------------------------------------------Pjesmarresit---------------------------------------------*/
+/*-----------------------DanjelQose-----------------------*/
+.footerp {
+  position:relative;
+  padding: 25px;
+  background-color: #626567;
+  text-align: center;
+  z-index: 9999;
+  clear: both;
+  padding-top: 25px;
+	width: 100%;
+  bottom:  2500px;
+}
+
+
+p{
+	color: white;
+}
+
+.DanjelQose{
+  /*left: /* IDEA: Move the whole class from the left */
+  position: relative;
+  bottom: 200px;
+}
+.DanjelQose2{
+  /*left: /* IDEA: Move the whole class from the left */
+  position: relative;
+  top: 1000px;
+  left: 300px;
+}
+.socialmediainstad{
+  font-size: 20px;
+  bottom: 150px;
+  left: 1300px;
+  z-index: 2;
+  position: relative;
+}
+.socialmediasnapd{
+  font-size: 20px;
+  bottom: 140px;
+  left: 1300px;
+  position: relative;
+  z-index: 1;
+  opacity: 0.9;
+}
+.socialmediaskyped{
+  font-size: 20px;
+  bottom: 130px;
+  left: 1300px;
+  position: relative;
+  z-index: 1;
+}
+.socialmediafacebookd{
+  font-size: 20px;
+  bottom: 120px;
+  left: 1300px;
+  position: relative;
+  z-index: 1;
+}
+
+
+/*-------------------------extra socialmediacolors------------------------*/
+#insta .fa:hover{
+  background-color: #8b008b;
+}
+#snap  .fa:hover{
+  background-color: #fffc00;
+}
+#fb    .fa:hover{
+  background-color: #3B5998;
+}
+#skype .fa:hover{
+    background-color: #00aff0;
+}
+#linkedin .fa:hover{
+  background-color: #007bb5;
+
+}
+
+
+
+/*-------------------------extra socialmediacolors------------------------*/
+.fotod img:nth-of-type(1){
+  top: 250px;
+  left: 100px;
+  border-style: double;
+  border-width: 4px 4px 4px 4px;
+  border-color: black;
+  border-radius: 0.5%;
+  position: relative;
+}
+.foto3 img:nth-of-type(1){
+  bottom: 300px;
+  left: 100px;
+  border-style: double;
+  border-width: 4px 4px 4px 4px;
+  border-color: black;
+  border-radius: 0.5%;
+  position: relative;
+}
+
+.fa-instagram{
+  background: #000;
+  color: white;
+}
+.fa-snapchat-ghost {
+  backgro000;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.fa-skype {
+  backgro000;
+  color: white;
+}
+.fa-facebook {
+  backgro000;
+  color: white;
+}
+
+
+.nameqose{
+  font-color: black;
+  font-family: algerian;
+  font-size: 50px;
+  top: 510px;
+  left: 550px;
+  position: relative;
+}
+.nameqose11{
+  font-color: black;
+  font-size: 20px;
+  top: 250px;
+  left: 150px;
+  position: relative;
+}
+
+.nameqose13{
+  font-color: black;
+  font-size: 20px;
+  /*top: 250px;
+  left: 150px;
+  position: relative;*/
+}
+.holokausti3{
+  position: relative;
+  bottom:600px;
+  left: 0px;
+}
+.texth13{
+  position: relative;
+  font-size: 20px;
+  font-family:serif;
+  top:100px;
+  left: 500px;
+}
+
+hr{
+  display: block;
+  color: black;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  width: 50%;
+}
+
+.text{
+  position: relative;
+  font-size: 20px;
+  font-family: serif;
+  top: 0px;
+
+}
+
+/*-----------------------MarioAlla-----------------------*/
+.holokausti1{
+  position: relative;
+  bottom:400px;
+  left: 0px;
+}
+
+.holokausti2{
+  position: relative;
+  bottom:750px;
+}
+
+.fotoh1 img:nth-of-type(1){
+  bottom: 900px;
+  left: 880px;
+  border-style: double;
+  border-width: 4px 4px 4px 4px;
+  border-color: black;
+  border-radius: 0.5%;
+  position: relative;
+}
+.fotoh11 img:nth-of-type(1){
+  top: 250px;
+  left: 1000px;
+  border-style: double;
+  border-width: 4px 4px 4px 4px;
+  border-color: black;
+  border-radius: 0.5%;
+  position: relative;
+}
+
+.texth{
+  position: relative;
+  font-size: 20px;
+  font-family: serif;
+  top: 200px;
+}
+.texth11{
+  position: relative;
+  font-size: 20px;
+  font-family:serif;
+  top:100px;
+}
+
+.texth12{
+  position:relative;
+  font-size: 20px;
+  font-family: serif;
+  bottom:550px;
+}
+.MarioAlla{
+  /*left: /* IDEA: Move the whole class from the left */
+  position: relative;
+  bottom: 550px;
+}
+.socialmediainstam{
+  font-size: 20px;
+  bottom: 150px;
+  left: 70px;
+  position: relative;
+  z-index: 1;
+}
+.socialmediasnapm{
+  font-size: 20px;
+  bottom: 140px;
+  left: 70px;
+  position: relative;
+  opacity: 0.9;
+  z-index: 1;
+}
+.socialmedialinkedinm{
+  font-size: 20px;
+  bottom: 130px;
+  left: 70px;
+  position: relative;
+  z-index: 1;
+}
+.socialmediafacebookm{
+  font-size: 20px;
+  bottom: 120px;
+  left: 70px;
+  position: relative;
+  z-index: 1;
+}
+.fotom img:nth-of-type(1){
+  top: 250px;
+  left: 1000px;
+  border-style: double;
+  border-width: 4px 4px 4px 4px;
+  border-color: black;
+  border-radius: 0.5%;
+  position: relative;
+}
+.namealla{
+  font-color: black;
+  font-family: algerian;
+  font-size: 50px;
+  top: 510px;
+  left: 200px;
+  position: relative;
+}
+
+hr{
+  display: block;
+  color: black;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  width: 50%;
+}
+
+.text{
+  position: relative;
+  font-size: 20px;
+  font-family: serif;
+  top: 0px;
+
+}
+
+
+/*-----------------------MetushMuhametaj-----------------------*/
+.MetushMuhametaj{
+  /*left: /* IDEA: Move the whole class from the left */
+  position: relative;
+  bottom: 900px;
+}
+.socialmediainstame{
+  font-size: 20px;
+  bottom: 140px;
+  left: 1300px;
+  position: relative;
+}
+.socialmediasnapme{
+  font-size: 20px;
+  bottom: 130px;
+  left: 1300px;
+  position: relative;
+  z-index: 1;
+  opacity: 0.9;
+}
+.socialmediaskypeme{
+  font-size: 20px;
+  bottom: 120px;
+  left: 1300px;
+  position: relative;
+  z-index: 1;
+}
+.socialmediafacebookme{
+  font-size: 20px;
+  bottom: 110px;
+  left: 1300px;
+  position: relative;
+  z-index: 1;
+}
+.fotome img:nth-of-type(1){
+  top: 250px;
+  left: 100px;
+  border-style: double;
+  border-width: 4px 4px 4px 4px;
+  border-color: black;
+  border-radius: 0.5%;
+  position: relative;
+}
+
+.fa-instagram{
+  background: #000;
+  color: white;
+}
+.fa-snapchat-ghost {
+  background000;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.fa-skype {
+  background000;
+  color: white;
+}
+.fa-facebook {
+  background000;
+  color: white;
+}
+
+
+.namemuhametaj{
+  font-color: black;
+  font-family: algerian;
+  font-size: 50px;
+  top: 610px;
+  left: 550px;
+  position: relative;
+}
+
+hr{
+  display: block;
+  color: black;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  width: 50%;
+}
+hr1{
+  display: block;
+  color: black;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 0.5px;
+  width: 45%;
+}
+
+
+p{
+  position: relative;
+  font-size: 20px;
+  font-family: cursive;
+  top: 0px;
+}
+
+.text1{
+  position: relative;
+  font-size: 20px;
+  font-family: cursive;
+  top: 0px;
+}
+
+
+/*-----------------------GeraldProda-----------------------*/
+.GeraldProda{
+  /*left: /* IDEA: Move the whole class from the left */
+  position: relative;
+  bottom: 1250px;
+}
+.socialmediainstap{
+  font-size: 20px;
+  bottom: 150px;
+  left: 70px;
+  position: relative;
+  z-index: 1;
+}
+.socialmediasnapp{
+  font-size: 20px;
+  bottom: 140px;
+  left: 70px;
+  position: relative;
+  opacity: 0.9;
+  z-index: 1;
+}
+.socialmediaskypep{
+  font-size: 20px;
+  bottom: 130px;
+  left: 70px;
+  position: relative;
+  z-index: 1;
+}
+.socialmediafacebookp{
+  font-size: 20px;
+  bottom: 120px;
+  left: 70px;
+  position: relative;
+  z-index: 1;
+}
+.fotop img:nth-of-type(1){
+  top: 250px;
+  left: 1000px;
+  border-style: double;
+  border-width: 4px 4px 4px 4px;
+  border-color: black;
+  border-radius: 0.5%;
+  position: relative;
+}
+
+.nameproda{
+  font-color: black;
+  font-family: algerian;
+  font-size: 50px;
+  top: 510px;
+  left: 200px;
+  position: relative;
+}
+
+hr{
+  display: block;
+  color: black;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  width: 50%;
+}
+
+.text{
+  position: relative;
+  font-size: 20px;
+  font-family: serif;
+  top: 0px;
+
+}
+
+/*-----------------------TeaAleksi-----------------------*/
+
+.TeaAleksi{
+  /*left: /* IDEA: Move the whole class from the left */
+  position: relative;
+  bottom: 1600px;
+}
+.socialmediainstat{
+  font-size: 20px;
+  bottom: 150px;
+  left: 1300px;
+  position: relative;
+}
+.socialmediasnapt{
+  font-size: 20px;
+  bottom: 140px;
+  left: 1300px;
+  position: relative;
+  z-index: 1;
+  opacity: 0.9;
+}
+.socialmediaskypet{
+  font-size: 20px;
+  bottom: 130px;
+  left: 1300px;
+  position: relative;
+  z-index: 1;
+}
+.socialmediafacebookt{
+  font-size: 20px;
+  bottom: 120px;
+  left: 1300px;
+  position: relative;
+  z-index: 1;
+}
+.fotot img:nth-of-type(1){
+  top: 250px;
+  left: 100px;
+  border-style: double;
+  border-width: 4px 4px 4px 4px;
+  border-color: black;
+  border-radius: 0.5%;
+  position: relative;
+}
+
+.fa-instagram{
+  background: #000;
+  color: white;
+}
+.fa-snapchat-ghost {
+  background: #000;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.fa-skype {
+  background: #000;
+  color: white;
+}
+.fa-facebook {
+  background: #000;
+  color: white;
+}
+
+
+.namealeksi{
+  font-color: black;
+  font-family: algerian;
+  font-size: 50px;
+  top: 510px;
+  left: 550px;
+  position: relative;
+}
+
+hr{
+  display: block;
+  color: black;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  width: 50%;
+}
+
+.text{
+  position: relative;
+  font-size: 20px;
+  font-family: serif;
+  top: 0px;
+}
+
+/*-----------------------LoraShima-----------------------*/
+.LoraShima{
+  /*left: /* IDEA: Move the whole class from the left */
+  position: relative;
+  bottom: 1950px;
+}
+.socialmediainstal{
+  font-size: 20px;
+  bottom: 150px;
+  left: 70px;
+  position: relative;
+  z-index: 1;
+}
+.socialmediasnapl{
+  font-size: 20px;
+  bottom: 140px;
+  left: 70px;
+  position: relative;
+  opacity: 0.9;
+  z-index: 1;
+}
+.socialmediaskypel{
+  font-size: 20px;
+  bottom: 130px;
+  left: 70px;
+  position: relative;
+  z-index: 1;
+}
+.socialmediafacebookl{
+  font-size: 20px;
+  bottom: 120px;
+  left: 70px;
+  position: relative;
+  z-index: 1;
+}
+.fotol img:nth-of-type(1){
+  top: 250px;
+  left: 1000px;
+  border-style: double;
+  border-width: 4px 4px 4px 4px;
+  border-color: black;
+  border-radius: 0.5%;
+  position: relative;
+}
+.nameshima{
+  font-color: black;
+  font-family: algerian;
+  font-size: 50px;
+  top: 510px;
+  left: 200px;
+  position: relative;
+}
+
+hr{
+  display: block;
+  color: black;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  width: 50%;
+}
+
+.text{
+  position: relative;
+  font-size: 20px;
+  font-family: serif;
+  top: 0px;
+}
+
+/*-----------------------JunaAga-----------------------*/
+.JunaAga{
+  /*left: /* IDEA: Move the whole class from the left */
+  position: relative;
+  bottom: 2300px;
+}
+.socialmediainstaj{
+  font-size: 20px;
+  bottom: 150px;
+  left: 1300px;
+  position: relative;
+}
+.socialmediasnapj{
+  font-size: 20px;
+  bottom: 140px;
+  left: 1300px;
+  position: relative;
+  z-index: 1;
+  opacity: 0.9;
+}
+.socialmediatwitterj{
+  font-size: 20px;
+  bottom: 130px;
+  left: 1300px;
+  position: relative;
+  z-index: 1;
+}
+.socialmediafacebookj{
+  font-size: 20px;
+  bottom: 120px;
+  left: 1300px;
+  position: relative;
+  z-index: 1;
+}
+.fotoj img:nth-of-type(1){
+  top: 250px;
+  left: 100px;
+  border-style: double;
+  border-width: 4px 4px 4px 4px;
+  border-color: black;
+  border-radius: 0.5%;
+  position: relative;
+}
+
+.fa-instagram{
+  background: #000;
+  color: white;
+}
+.fa-snapchat-ghost {
+  background: #000;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.fa-skype {
+  background: #000;
+  color: white;
+}
+.fa-facebook {
+  background: #000;
+  color: white;
+}
+
+.nameaga{
+  font-color: black;
+  font-family: algerian;
+  font-size: 50px;
+  top: 510px;
+  left: 550px;
+  position: relative;
+}
+
+hr{
+  display: block;
+  color: black;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  width: 50%;
+}
+
+.text{
+  position: relative;
+  font-size: 20px;
+  font-family: serif;
+  top: 0px;
+}
+
+/*-----------------------EnxhiMersini-----------------------*/
+.EnxhiMersini{
+  /*left: /* IDEA: Move the whole class from the left */
+  position: relative;
+  bottom: 2650px;
+}
+.socialmediainstae{
+  font-size: 20px;
+  bottom: 150px;
+  left: 70px;
+  position: relative;
+  z-index: 1;
+}
+.socialmediasnape{
+  font-size: 20px;
+  bottom: 140px;
+  left: 70px;
+  position: relative;
+  opacity: 0.9;
+  z-index: 1;
+}
+.socialmediaskypee{
+  font-size: 20px;
+  bottom: 130px;
+  left: 70px;
+  position: relative;
+  z-index: 1;
+}
+.socialmediafacebooke{
+  font-size: 20px;
+  bottom: 120px;
+  left: 70px;
+  position: relative;
+  z-index: 1;
+}
+.fotoe img:nth-of-type(1){
+  top: 250px;
+  left: 1000px;
+  border-style: double;
+  border-width: 4px 4px 4px 4px;
+  border-color: black;
+  border-radius: 0.5%;
+  position: relative;
+}
+.namemersini{
+  font-color: black;
+  font-family: algerian;
+  font-size: 50px;
+  top: 510px;
+  left: 200px;
+  position: relative;
+}
+
+hr{
+  display: block;
+  color: black;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  width: 50%;
+}
+
+.text{
+  position: relative;
+  font-size: 20px;
+  font-family: serif;
+  top: 0px;
+
+
+
+
+
+/*------------------------------------------Holokausti------------------------------------*/
+/*-----------------------------------------------Pjesmarresit---------------------------------------------*/
+/*-----------------------DanjelQose-----------------------*/
+.footerp {
+  position:relative;
+  padding: 25px;
+  background-color: #626567;
+  text-align: center;
+  z-index: 9999;
+  clear: both;
+  padding-top: 25px;
+	width: 100%;
+  bottom:  2500px;
+}
+
+
+p{
+	color: white;
+}
+
+.Holokausti{
+  /*left: /* IDEA: Move the whole class from the left */
+  position: relative;
+  left: 100px;
+
+}
+
+
+/*-------------------------extra socialmediacolors------------------------*/
+#insta .fa:hover{
+  background-color: #8b008b;
+}
+#snap  .fa:hover{
+  background-color: #fffc00;
+}
+#fb    .fa:hover{
+  background-color: #3B5998;
+}
+#skype .fa:hover{
+    background-color: #00aff0;
+}
+#linkedin .fa:hover{
+  background-color: #007bb5;
+
+}
+
+
+
+/*-------------------------extra socialmediacolors------------------------*/
+.fotoholokausti img:nth-of-type(1){
+  border-style: double;
+  border-width: 4px 4px 4px 4px;
+  border-color: black;
+  border-radius: 0.5%;
+  position: relative;
+  left: 1000px;
+}
+.holokausti{
+  font-color: black;
+  font-family: algerian;
+  font-size: 50px;
+  top: 510px;
+  left: 550px;
+  position: relative;
+}
+.nameqose11{
+
+}
+
+.holokausti10{
+  bottom: 10000px;
+  left: 550px;
+  position: relative;
+}
+hr{
+  display: block;
+  color: black;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  width: 50%;
+}
+
+.text{
+  position: relative;
+  font-size: 20px;
+  font-family: serif;
+  top: 0px;
+
+}
+
+.L{
+  left: 100px;
+}

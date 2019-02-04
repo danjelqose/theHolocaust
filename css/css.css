@@ -1,0 +1,10 @@
+.picture img:nth-of-type(1):hover{
+  -webkit-transform: translateX(-100px) scale(1);
+  -moz-transform: translateX(-100px) scale(1);
+  -o-transform: translateX(-100px) scale(1);
+  transform:translateX(-100px) scale(1);
+
+  width:350px;
+  height:450px;
+  left:5.5cm;
+}
